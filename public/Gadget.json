@@ -118,6 +118,31 @@
       "availability": true,
       "rating": 4.4,
       "warranty": "Magic Eraser tool"
+    },
+    {
+        "product_id": "11",
+        "product_title": "Dell XPS 13",
+        "product_image": "https://i.ibb.co/YkHr3Rh/dell-xps-13.jpg",
+        "category": "Laptops",
+        "price": 1200,
+        "description": "A sleek and powerful laptop with a near-borderless display.",
+        "Specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "13.3-inch FHD"],
+        "availability": true,
+        "rating": 4.8,
+        "warranty": "2 years"
+    },
+    {
+        "product_id": "12",
+        "product_title": "Samsung Galaxy Watch",
+        "product_image": "https://i.ibb.co/YhK8v0p/samsung-galaxy-watch-5.jpg",
+        "category": "SmartWatches",
+        "price": 250,
+        "description": "An advanced smartwatch with health tracking and GPS.",
+        "Specification": ["1.4-inch display", "GPS", "Heart rate monitor", "Bluetooth"],
+        "availability": true,
+        "rating": 4.5,
+        "warranty": "1 year"
     }
+    
   ]
   
