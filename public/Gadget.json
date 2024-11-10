@@ -120,7 +120,7 @@
       "warranty": "Magic Eraser tool"
     },
     {
-        "product_id": "11",
+        "product_id": 11,
         "product_title": "Dell XPS 13",
         "product_image": "https://i.ibb.co/YkHr3Rh/dell-xps-13.jpg",
         "category": "Laptops",
@@ -132,7 +132,7 @@
         "warranty": "2 years"
     },
     {
-        "product_id": "12",
+        "product_id": 12,
         "product_title": "Samsung Galaxy Watch",
         "product_image": "https://i.ibb.co/YhK8v0p/samsung-galaxy-watch-5.jpg",
         "category": "SmartWatches",

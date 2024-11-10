@@ -5,10 +5,14 @@ import { Outlet } from 'react-router-dom';
 
 const Root = () => {
     return (
-        <div className='max-w-6xl mx-auto'>
+        <div className='bg-[#F7F7F7]'>
+            <div className='max-w-6xl mx-auto'>
+            <div className='mb-96'>
             <Navbar></Navbar>
             <Outlet></Outlet>
+            </div>
             <Footer></Footer>
+        </div>
         </div>
     );
 };

@@ -11,9 +11,9 @@ const Books = () => {
     
     return (
         <div>
-            <h2 className="font-bold text-4xl flex justify-center items-center">Explore Cutting-Edge Gadgets</h2>
+            <h2 className="font-bold text-4xl flex justify-center items-center mb-4">Explore Cutting-Edge Gadgets</h2>
             <div className="flex gap-4">
-                <div className="w-1/4 flex flex-col gap-2 mb-4">
+                <div className="w-1/4 flex flex-col gap-2 mb-4 bg-white p-8 shadow-xl rounded-xl">
                     <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">All Product</button>
                     <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Laptops</button>
                     <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Phones</button>
