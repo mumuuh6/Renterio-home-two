@@ -6,7 +6,9 @@ import { addstoredWhishList } from "../Utilities/WishList";
 import { useState } from "react";
 
 const GadgetDetail = () => {
-    const [disabled,setdisabled] = useState(true);
+    const [disabled, setdisabled] = useState(true);
+    const [toastMessage, setToastMessage] = useState("");
+    const [showToast, setShowToast] = useState(false);
     const { gadgetId } = useParams();
     const id = parseInt(gadgetId);
     const data = useLoaderData();
@@ -15,17 +17,27 @@ const GadgetDetail = () => {
 
     const handlecartinfo = (id) => {
         addstoredcartList(id);
- 
-    }
+        setToastMessage("Item added to cart successfully!");
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 3000);
+    };
 
     const handlewhishListinfo = (id) => {
         addstoredWhishList(id);
         setdisabled(false);
-        
-    }
+        setToastMessage("Item added to wishlist successfully!");
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 3000);
+    };
 
     return (
         <div className="relative">
+            {showToast && (
+                <div className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white p-4 rounded-lg shadow-md">
+                    <p>{toastMessage}</p>
+                </div>
+            )}
+
             <div className="bg-[#9538E2] rounded-lg flex justify-center items-center py-8">
                 <div className="bg-white w-2/3 absolute top-40 p-4 border rounded-lg backdrop:blur-2xl flex gap-4">
                     <img src={product_image} alt="" className="max-w-sm rounded-lg shadow-2xl" />
@@ -57,12 +69,11 @@ const GadgetDetail = () => {
                             <Link onClick={() => handlecartinfo(gadgetId)} className="btn btn-outline btn-primary">
                                 <p>Add to Cart</p><IoCartOutline />
                             </Link>
+
                             <Link onClick={() => handlewhishListinfo(gadgetId)} disabled={disabled} className={`border rounded-2xl p-2 ${disabled ? "bg-white" : "bg-gray-400"}`}>
                                 <IoIosHeartEmpty className="border size-8 rounded-2xl text-center" />
                             </Link>
                         </div>
-                        
-                        
                     </div>
                 </div>
                 <div className="px-44 relative flex flex-col justify-center items-center text-center mb-14">
