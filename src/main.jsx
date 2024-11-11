@@ -8,11 +8,14 @@ import Home from './Componants/Home';
 import Dashboard from './Componants/Dashboard';
 import Statistics from './Componants/Statistics';
 import GadgetDetail from './Componants/ProductDetails/GadgetDetail';
+import ContactUs from './Componants/ContactUs';
+import ErrorPage from './Componants/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:'/',
@@ -31,6 +34,10 @@ const router = createBrowserRouter([
         path:'/dashboard',
         element:<Dashboard></Dashboard>,
         loader:()=>fetch('/Gadget.json')
+      },
+      {
+        path:'/contact',
+        element:<ContactUs></ContactUs>
       }
     ]
   },

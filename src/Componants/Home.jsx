@@ -1,5 +1,5 @@
 import Banner from "./Banner/Banner";
-import Books from "./Book/Books";
+import NestedLayout from "./NestedLayout";
 
 const Home = () => {
     return (
@@ -9,7 +9,8 @@ const Home = () => {
             </div>
             <div>
                 <div className="mt-64 mb-6">
-                <Books></Books>
+                    <NestedLayout></NestedLayout>
+        
             </div>
             </div>
         </div>
