@@ -10,6 +10,9 @@ const Dashboard = () => {
     const [cartListt, setcartListt] = useState([]);
     const [wishcartListt, setwishcartListt] = useState([]);
     const [sum,setsum]=useState(0);
+    useEffect(()=>{
+        document.title='Gadget Heaven Dashboard'
+    },[])
     useEffect(() => {
         const storedlists = getstoredcartList();
         const storedlistsint = storedlists.map(id => parseInt(id));

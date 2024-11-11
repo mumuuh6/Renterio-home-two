@@ -3,7 +3,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { addstoredcartList } from "../Utilities/Addtols";
 import { addstoredWhishList } from "../Utilities/WishList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const GadgetDetail = () => {
     const [disabled, setdisabled] = useState(true);
@@ -14,7 +14,9 @@ const GadgetDetail = () => {
     const data = useLoaderData();
     const gadget = data.find(gadgets => gadgets.product_id === id);
     const { product_id, product_title, product_image, category, price, description, Specification, availability, rating, warranty } = gadget;
-
+    useEffect(()=>{
+        document.title="Detail Product"
+    },[])
     const handlecartinfo = (id) => {
         addstoredcartList(id);
         setToastMessage("Item added to cart successfully!");

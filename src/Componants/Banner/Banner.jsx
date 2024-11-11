@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -15,7 +16,7 @@ const Banner = () => {
                     <p className="py-4 text-white text-base font-normal">
                     Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
                     </p>
-                    <button className="btn btn-primary bg-white text-purple-600 ">Shop Now</button>
+                    <Link to='/dashboard' className="btn btn-primary bg-white text-purple-600 ">Shop Now</Link>
                 </div>
             </div>
         </div>
