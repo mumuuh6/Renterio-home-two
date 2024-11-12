@@ -16,7 +16,7 @@ const NestedLayout = () => {
         <div>
             <h2 className="font-bold text-4xl flex justify-center items-center mb-4">Explore Cutting-Edge Gadgets</h2>
             <div className="flex gap-4">
-                <Sidebar Gadgets={Gadgets}
+                <Sidebar  Gadgets={Gadgets}
                 category={category}
             setCategory={setCategory}
                 ></Sidebar>
