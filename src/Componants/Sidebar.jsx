@@ -6,7 +6,7 @@ const Sidebar = ({Gadgets,category,setCategory}) => {
     return (
         
             <div className="w-1/4 flex flex-col gap-2 mb-4 bg-white p-8 shadow-xl rounded-xl">
-                {["All", "Laptops", "Smartphones", "Accessories", "SmartWatches", "Tablets", "IPhone"].map(cat => (
+                {["All", "Penthouse","VillaHouse","Apartment","Loft","MansionHouse"].map(cat => (
                         <button key={cat}
                             onClick={() => setCategory(cat)}
                             className={`btn btn-xs sm:btn-sm md:btn-md lg:btn-lg ${category === cat ? "bg-purple-500 text-white" : "bg-white text-purple-500"}`}

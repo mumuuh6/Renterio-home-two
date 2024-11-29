@@ -43,7 +43,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex">
                         <img src="https://i.ibb.co.com/5cX6h0h/favicon-16x16.png" alt="" className='w-full object-fit' />
-                        <a className="btn btn-ghost text-xl">Gadget Heaven</a>
+                        <a className="btn btn-ghost text-xl">Renterio Home</a>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">

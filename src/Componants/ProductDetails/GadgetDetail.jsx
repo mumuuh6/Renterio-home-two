@@ -14,9 +14,9 @@ const GadgetDetail = () => {
     const data = useLoaderData();
     const gadget = data.find(gadgets => gadgets.product_id === id);
     const { product_id, product_title, product_image, category, price, description, Specification, availability, rating, warranty } = gadget;
-    useEffect(()=>{
-        document.title="Detail Product"
-    },[])
+    useEffect(() => {
+        document.title = "Detail Product"
+    }, [])
     const handlecartinfo = (id) => {
         addstoredcartList(id);
         setToastMessage("Item added to cart successfully!");
@@ -33,7 +33,7 @@ const GadgetDetail = () => {
     };
 
     return (
-        <div className="relative">
+        <div className="mb-72 relative">
             {showToast && (
                 <div className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-green-500 text-white p-4 rounded-lg shadow-md">
                     <p>{toastMessage}</p>
@@ -79,10 +79,11 @@ const GadgetDetail = () => {
                     </div>
                 </div>
                 <div className="px-44 relative flex flex-col justify-center items-center text-center mb-14">
-                    <h1 className="text-5xl font-bold text-white">Product Details</h1>
+                    <h1 className="text-5xl font-bold text-white">Property Details</h1>
                     <p className="py-4 text-white text-base font-normal">
-                        Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
+                        Discover your dream home among our wide range of premium properties. From luxurious villas to cozy apartments, find the perfect place to call your own!
                     </p>
+
                 </div>
             </div>
         </div>
